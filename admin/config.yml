@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (master by default)
+
+media_folder: "assets" # Media files will be stored in the assets folder
+public_folder: "/assets" # The src attribute for uploaded media will begin with /assets
+
+collections:
+  - name: "pages"
+    label: "الصفحات"
+    files:
+      - file: "index.html"
+        name: "home"
+        label: "الصفحة الرئيسية"
+        fields:
+          - { label: "اسمك (في القائمة العلوية)", name: "navName", widget: "string" }
+          - { label: "العنوان الرئيسي", name: "heroTitle", widget: "string" }
+          - { label: "العنوان الفرعي", name: "heroSubtitle", widget: "string" }
+          - { label: "النبذة التعريفية", name: "aboutText", widget: "text" }
+          - { label: "عنوان قسم الخبرات", name: "experience", widget: "string" }
+          - { label: "المسمى الوظيفي الأول", name: "job1Title", widget: "string" }
+          - { label: "مكان وتاريخ الوظيفة الأولى", name: "job1Location", widget: "string" }
+          - { label: "وصف الوظيفة الأولى (كل سطر نقطة)", name: "job1Desc", widget: "list" }
+          - { label: "المسمى الوظيفي الثاني", name: "job2Title", widget: "string" }
+          - { label: "مكان وتاريخ الوظيفة الثانية", name: "job2Location", widget: "string" }
+          - { label: "وصف الوظيفة الثانية (كل سطر نقطة)", name: "job2Desc", widget: "list" }
+          - { label: "عنوان قسم التعليم", name: "education", widget: "string" }
+          - { label: "الشهادة الجامعية", name: "edu1", widget: "string" }
+          - { label: "عنوان قسم المهارات", name: "skills", widget: "string" }
+          - { label: "عنوان قسم المشاريع", name: "navProjects", widget: "string" }
+          - { label: "عنوان مشروع أوقات الصلاة", name: "project1Title", widget: "string" }
+          - { label: "وصف مشروع أوقات الصلاة", name: "project1Desc", widget: "string" }
+          - { label: "عنوان مشروع مشاويري", name: "project2Title", widget: "string" }
+          - { label: "وصف مشروع مشاويري", name: "project2Desc", widget: "string" }
+          - { label: "عنوان قسم الشهادات", name: "certificatesTitle", widget: "string" }
